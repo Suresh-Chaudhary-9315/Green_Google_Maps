@@ -182,9 +182,9 @@ else:
                 )
 
                 c1, c2, c3 = st.columns(3)
-                c1.metric("Distance", f"{route['distance_km']:.1f} km")
-                c2.metric("Time", f"{route['travel_time_min']:.0f} min")
-                c3.metric("CO₂", f"{route['predicted_co2_kg']:.2f} kg")
+                c1.metric("Distance in km", f"{route['distance_km']}")
+                c2.metric("Time in min", f"{route['travel_time_min']}")
+                c3.metric("CO₂ in Kg", f"{route['predicted_co2_kg']}")
 
                 st.caption(
                     f"Traffic: {route['traffic_level']} · "
